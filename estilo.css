@@ -1,0 +1,734 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;;
+    text-decoration: none;
+    list-style-type: none;
+    position: relative;
+    }
+
+body{
+    padding-bottom: 800px;
+    background-image: url(../TAREA1/background-pagina.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #f3f3f3;
+
+}    
+
+h1{
+    line-height: 1.3em;
+    font-size: 2rem;
+    }
+
+p{
+    margin-bottom: 1.6em;
+}
+
+.header{
+    background: #1a2461;
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 40px;
+    padding: 0 110px 0 0;
+    color: white;
+}
+
+.header .nav-links{
+    list-style: none;
+    position: sticky; top: 40px;     
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 5px;
+}
+
+
+.header .nav-links a{
+    font-size: 12px;
+    color:rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    padding-right: 5px;
+
+}
+
+.header .nav-links li a:hover{
+    color: white;
+    filter: brightness(300%);
+}
+
+.nav-right{
+    padding-left: 30px;
+}
+
+.header .links-right li{
+    display: inline-block;
+    color:rgba(255, 255, 255, 0.8);
+    padding: 0 5px;
+}
+
+.header .links-right li a:hover{
+    color: white;
+    filter: brightness(300%);
+}
+
+
+
+
+
+/* INICIO BARRA FIJA */
+
+
+
+
+
+
+.barra{
+    background: #2c3ca2;
+    color: rgba(255, 255, 255, 0.815);
+    height: 50px;
+    position: sticky; top: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.barra-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    margin: 0 130px 0 auto;
+    
+}
+
+.logo-rfen{
+    display: block;
+    height: 50px;
+    width: auto;
+    align-items: center;
+    margin: 0 0 0 80px;
+    
+}
+
+.barra-links{
+    height: 100%;
+    display: flex;
+    font-size: 14px;
+    cursor: pointer;
+   
+}
+
+.barra-item{
+    list-style: none;
+    position: relative;
+    height: 100%;
+    /*--clip:polygon(0 0, 100% 0, 100% 100%, 0% 100%);  HACE QUE APAREZCA*/
+    --clip: polygon(0 0, 100% 0, 100% 0, 0 0);
+    --transform: rotate(-90deg);
+   
+}
+
+.barra-item:hover{
+    --clip:polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    --transform: rotate(0);
+    
+}
+
+.barra-calendar{
+    margin-left: 30px;
+    
+}
+
+.barra-arrow{
+    transform: var(--transform);
+    transition: --transform 3s;
+    display: block;
+    margin-left: 3px;
+    
+}
+
+.barra-link{
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    padding: 0 10px 0 10px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    
+
+}
+
+
+
+.barra-link:hover{
+    color: rgba(255, 255, 255, 1);
+    filter: brightness(300%);
+    
+}
+
+.barra-calendar{
+    background-size: contain;
+    display: block;
+    margin-right: 3px;
+    
+
+}
+
+
+.barra-nesting{
+    list-style: none;
+    transition: clip-path .3s;
+    clip-path: var(--clip);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: max-content;
+    transform: translateY(100%);
+    background-color: white;
+    box-shadow: 0 1px 6px 1px rgba(0,0,0, .2);
+    text-justify: auto;
+    font-size: 14px;
+    
+
+}
+
+.barra-link-inside{
+    padding: 6px 15px 10px 20px; 
+    filter: brightness(100%);
+    color: black;
+}
+
+.barra-link-inside:hover{
+    background-color: rgba(0, 0, 0, 0.0422);
+    color: black;
+}
+
+.barra-inside-especialidades{
+    background-color: white;
+    display: block;
+    float: left;
+    justify-content: space-between;
+    color: black;
+}
+
+
+.img-deportes{
+    background-size: contain;
+    height: 50px;
+    width: 80px;
+    top:0;
+    text-align: center;
+    align-items: center;
+    padding: 0 5px;
+    
+}
+
+figcaption{
+    text-align: center;
+    padding: 0 5px;
+}
+
+.barra-arrow-mas{
+    background-color: black;
+    color: black;
+}
+
+#mas{
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+#mas-space{
+    padding-left: 66px;
+}
+
+/*INICIA CUERPO DE LA PAGINA - ORGANIZACION DE IMAGENES*/
+
+
+
+.nav-img1{
+    padding: 40px 100px 20px 100px;
+    align-items: center;
+}
+
+.nav-img2{
+    padding: 0 100px 100px 100px;
+}
+
+
+/*INICIA LA PARTE SUPERIOR - ACTIVIDADES*/
+
+
+
+
+.post-list{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 50px 20px 50px;
+    font-size: 14px;
+}
+
+.actividades{
+    font-size: 18px;
+}
+
+#mas-1{
+    background: #1f2a71;
+    color: white;
+    align-items: center;
+    height: 15px;
+    width: 15px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 7%;
+}
+
+.content{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10px;
+
+}
+
+.post{
+    height: 120px;
+    width: 560px;
+}
+
+.post-img-1{
+     background: url(.//imagenes/img1-actividades.png);
+     margin-top: 20px;
+     margin-left: 20px;
+     margin-bottom: 20px;
+     margin-right: 20px;
+     width: 80px;
+     height: 80px;
+     background-size: cover;
+     float: left;
+     border-radius: 5px;
+     
+}
+
+.post-img-2{
+    background: url(.//imagenes/img2-actividades.png);
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    float: left;
+    border-radius: 5px;
+}
+
+.post{
+    box-shadow: 0 1px 6px 1px rgba(0,0,0, .4);
+
+}
+
+/*.post:hover{
+    /*transform: translateY(-4px) ;      PARA QUE SUBA UN POCO LA IMAGEN
+    box-shadow: 0 1px 14px 2px rgba(0,0,0, .15);
+}*/
+
+.post-body{
+    display:inline-block;
+    padding: 20px 0 20px 0;
+    text-align: left;
+
+}
+
+.post-body span{
+    display: flex;
+    color: #999;
+    float: inline-end;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.post-body h2{
+    margin-top: 15px;
+}
+
+.post-body p{
+    line-height: 1.5;
+}
+
+.post-link{
+    padding: 10px;
+    background: #1f2a71;
+    color: rgba(255, 255, 255, 1);
+    width: 60px;
+    float: right;
+    text-align: center;
+    border-radius: 8%;
+    box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, .1);
+    margin-top: 40px;
+    margin-right: 20px;
+}
+
+.post-link:hover{
+    cursor: pointer;
+    color: white;
+    filter: brightness(120%);
+}
+
+.ver-mas{
+    margin-top: 40px;
+    position: relative;
+    float: right;
+    background: #1f2a71;
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
+    width: 215px;
+    height: 20px;
+    text-align: center;
+    margin-right: 60px;
+
+}
+
+.ver-mas:hover{
+    text-decoration: underline;
+    filter: brightness(120%);
+}
+
+/*INICIA CUERPO-NOTICIAS*/
+
+
+.titulo-icono-noticias{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 50px 20px 50px;
+    font-size: 14px;
+}
+
+.post-list-noticias{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 15px;
+}
+
+.content-noticias{
+    display: grid;
+    grid-template-columns: 360px 360px 360px;
+    grid-gap: 30px;
+    margin: auto;
+    cursor: pointer;
+    text-align: justify;
+    height: 1300px;
+}
+
+/*COPIAR LAS 9 IMAGENES*/
+.post-img-1-noticias{
+    background-image: url(../Cuerpo1/imagenes\ cuerpo1/imagen1.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+
+.post-img-2-noticias{
+    background-image: url(../Cuerpo1/imagenes\ cuerpo1/imagen2.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+
+.post-img-3-noticias{
+    background-image: url(../Cuerpo1/imagenes\ cuerpo1/imagen3.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+
+.post-img-4-noticias{
+    background-image: url(../Cuerpo1/imagenes\ cuerpo1/imagen4.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+
+.post-img-5-noticias{
+    background-image: url(../Cuerpo1/imagenes\ cuerpo1/imagen5.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+
+.post-img-6-noticias{
+    background-image: url(../Cuerpo1/imagenes\ cuerpo1/imagen6.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+
+.post-img-7-noticias{
+    background-image: url(../Cuerpo1/imagenes\ cuerpo1/imagen7.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+
+.post-img-8-noticias{
+    background-image: url(../Cuerpo1/imagenes\ cuerpo1/imagen8.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+
+.post-img-9-noticias{
+    background-image: url(../Cuerpo1/imagenes\ cuerpo1/imagen9.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+/*COPIAR LAS 9 IMAGENES*/
+
+.post-noticias{
+    box-shadow: 0 1px 6px 1px rgba(0, 0, 0, .3);
+    overflow: hidden;
+    transition: .2s;
+}
+
+.post-noticias:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 1px 1.5px 3px rgb(49, 75, 160);
+    border-radius: 2px;
+}
+
+.post-header-noticias{
+    width: 100%;
+    overflow: hidden;
+}
+
+.post-noticias:hover .post-img-1-noticias{
+    transform: scale(1.1);
+}
+
+
+.post-link-noticias{
+    display: block;
+    text-decoration: none;
+    padding: 3px;
+    background-color: rgb(49, 75, 160);
+    color: white;
+    border-radius: 8px;
+    width: 25%;
+    box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, .1);
+    text-align: center;
+}
+
+.parte-abajo-noticias{
+    padding: 10px;
+}
+
+.parte-abajo-noticias span{
+    display: inline-block;
+    color: rgb(37, 37, 37);
+    margin-bottom: 5px;
+
+}
+
+
+.parte-texto-noticias p{
+    height: 35px;
+    line-height: 1.5;
+    margin-bottom: 3px;
+    overflow: hidden;
+    padding: 0 10px;
+}
+
+.post-link-natacion-noticias{
+    display: block;
+    text-decoration: none;
+    padding: 3px;
+    background-color: rgb(243, 175, 29);
+    color: white;
+    border-radius: 8px;
+    width: 25%;
+    box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, .1);
+    text-align: center;
+}
+
+
+.titulo-noticias{
+    margin-top: 8px;
+    margin-bottom: 15px;
+    height: 70px;
+    font-size: 11px;
+    line-height: 1.5;
+    padding: 0 10px;
+}
+
+.ver-mas-noticias{
+    display: flex;
+    float: right;
+    margin-right: 100px;
+    background: #1f2a71;
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
+    width: 130px;
+    height: 20px;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.ver-mas-noticias:hover{
+    text-decoration: underline;
+    filter: brightness(120%);
+}
+
+/*FOOTER*/
+
+
+
+.footer{
+     width: 100%;
+     height: 500px;
+     background: rgb(36, 36, 143);
+     margin-top: 30px;
+     position: absolute;
+     bottom: 0;
+}
+
+.grupo-1-footer{
+    display: flex;
+    justify-content: center;
+    padding: 30px 0 30px 0;
+    font-size: 14px;
+    filter: brightness(130%);
+}
+
+.red-social{
+    background: rgb(16, 16, 85);
+    padding: 10px 40px 10px 40px;
+
+}
+
+.fa-facebook{
+    color: white;
+    padding: 15px;
+    
+
+}
+
+.redes-footer{
+    color: white;
+}
+
+.fa-instagram{
+    color: white;
+    padding: 15px;
+}
+.fa-twitter{
+    color: white;
+    padding: 15px;
+}
+.fa-linkedin{
+    color: white;
+    padding: 15px;
+}
+
+.redes-footer{
+    padding-right: 30px;
+}
+
+.redes-footer:hover{
+    text-decoration: underline;
+    filter: brightness(120%);
+}
+
+.menu-footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 14px;
+
+}
+
+.divisiones{
+    color: white;
+    padding: 15px;
+}
+
+.divisiones:hover{
+    text-decoration: underline;
+    filter: brightness(120%);
+}
+
+.barra-divisoria{
+    color: white;
+}
+
+.cajas-footer{
+    margin-top: 30px;
+}
+
+.lista-cajas-footer{
+    display: flex;
+    justify-content: center;
+}
+
+.lista-cajas{
+    color: white;
+    padding: 15px  40px 20px 40px;
+}
+
+
+.grupo-2-footer{
+    font-size: 18px;
+    color: #b5b5b5;
+    align-items: center;
+    padding: 30px 250px;
+    position: absolute;
+    bottom: 0;
+}
+
+.lista-cajas-bloques{
+    color: white;
+    align-items: center;
+    padding: 0 0 0 40px;
+    margin-top: 20px;
+}
+
+#bloques-footer{
+    color: white;
+    padding: 20px 0;
+}
+
+#bloques-footer:hover {
+    text-decoration: underline;
+    filter: brightness(120%);
+}
