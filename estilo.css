@@ -250,7 +250,12 @@ figcaption{
 
 /*INICIA CUERPO DE LA PAGINA - ORGANIZACION DE IMAGENES*/
 
-
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 
 .nav-img1{
     padding: 40px 100px 20px 100px;
