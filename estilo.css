@@ -9,7 +9,7 @@
 
 body{
     padding-bottom: 800px;
-    background-image: url(../TAREA1/background-pagina.jpg);
+    background-image: url(./imagenes/Imagenes\ generales/background-pagina.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-color: #f3f3f3;
@@ -305,7 +305,7 @@ figcaption{
 }
 
 .post-img-1{
-     background: url(.//imagenes/img1-actividades.png);
+     background: url(./imagenes/img1-actividades.png);
      margin-top: 20px;
      margin-left: 20px;
      margin-bottom: 20px;
@@ -319,7 +319,7 @@ figcaption{
 }
 
 .post-img-2{
-    background: url(.//imagenes/img2-actividades.png);
+    background: url(./imagenes/img2-actividades.png);
     margin-top: 20px;
     margin-left: 20px;
     margin-bottom: 20px;
@@ -433,7 +433,7 @@ figcaption{
 
 /*COPIAR LAS 9 IMAGENES*/
 .post-img-1-noticias{
-    background-image: url(../Cuerpo1/imagenes\ cuerpo1/imagen1.jpg);
+    background-image: url(./imagenes/imagenes\ cuerpo1/imagen1.jpg);
     width: 100%;
     height: 200px;
     background-size: cover;
@@ -442,7 +442,7 @@ figcaption{
 }
 
 .post-img-2-noticias{
-    background-image: url(../Cuerpo1/imagenes\ cuerpo1/imagen2.jpg);
+    background-image: url(./imagenes/imagenes\ cuerpo1/imagen2.jpg);
     width: 100%;
     height: 200px;
     background-size: cover;
@@ -451,7 +451,7 @@ figcaption{
 }
 
 .post-img-3-noticias{
-    background-image: url(../Cuerpo1/imagenes\ cuerpo1/imagen3.jpg);
+    background-image: url(./imagenes/imagenes\ cuerpo1/imagen3.jpg);
     width: 100%;
     height: 200px;
     background-size: cover;
@@ -460,7 +460,7 @@ figcaption{
 }
 
 .post-img-4-noticias{
-    background-image: url(../Cuerpo1/imagenes\ cuerpo1/imagen4.jpg);
+    background-image: url(./imagenes/imagenes\ cuerpo1/imagen4.jpg);
     width: 100%;
     height: 200px;
     background-size: cover;
@@ -469,7 +469,7 @@ figcaption{
 }
 
 .post-img-5-noticias{
-    background-image: url(../Cuerpo1/imagenes\ cuerpo1/imagen5.jpg);
+    background-image: url(./imagenes/imagenes\ cuerpo1/imagen5.jpg);
     width: 100%;
     height: 200px;
     background-size: cover;
@@ -478,7 +478,7 @@ figcaption{
 }
 
 .post-img-6-noticias{
-    background-image: url(../Cuerpo1/imagenes\ cuerpo1/imagen6.jpg);
+    background-image: url(./imagenes/imagenes\ cuerpo1/imagen6.jpg);
     width: 100%;
     height: 200px;
     background-size: cover;
@@ -487,7 +487,7 @@ figcaption{
 }
 
 .post-img-7-noticias{
-    background-image: url(../Cuerpo1/imagenes\ cuerpo1/imagen7.jpg);
+    background-image: url(./imagenes/imagenes\ cuerpo1/imagen7.jpg);
     width: 100%;
     height: 200px;
     background-size: cover;
@@ -496,7 +496,7 @@ figcaption{
 }
 
 .post-img-8-noticias{
-    background-image: url(../Cuerpo1/imagenes\ cuerpo1/imagen8.jpg);
+    background-image: url(./imagenes/imagenes\ cuerpo1/imagen8.jpg);
     width: 100%;
     height: 200px;
     background-size: cover;
@@ -505,7 +505,7 @@ figcaption{
 }
 
 .post-img-9-noticias{
-    background-image: url(../Cuerpo1/imagenes\ cuerpo1/imagen9.jpg);
+    background-image: url(./imagenes/imagenes\ cuerpo1/imagen9.jpg);
     width: 100%;
     height: 200px;
     background-size: cover;
